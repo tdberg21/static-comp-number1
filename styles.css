@@ -1,4 +1,4 @@
- 
+
 * {
   color: #FFFFFF;
   font-family: 'Monterrat', sans-serif;
@@ -7,45 +7,57 @@
 /*Text*/
 
 h2 {
-  margin-top: 50px;
-  margin-left: 25px;
   margin-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 50px;
 }
 
 h6 {
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
 }
 
 p {
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 10px;
   margin-left: 25px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 100;
-  font-size: 13px;
 }
 
 /*Buttons*/
 
 button {
   background: transparent;
-  border-width: thin;
   border-color: #FFFFFF;
-  margin-left: 10px;
-  height: 35px;
-  width: 120px;
+  border-width: thin;
   font-size: 14px;
-  padding-left: 0;
+  height: 35px;
+  margin-left: 10px;
   margin-top: 10px;
+  padding-left: 0;
+  width: 120px;
 }
 
 button:hover {
   background-color: #FFFFFF;
-  color: #05A8AA
+  color: #05A8AA;
 }
 
-.resumeButton {
+.resume-button {
   margin-left: 25px;
+}
+
+.carousel {
+  border-radius: 50%;
+  border-width: medium;
+  margin-top: 350px;
+  width: 45px;
+}
+
+.right-carousel {
+  float: right;
+  margin-right: 5px;
 }
 
 /*Grid*/
@@ -64,22 +76,22 @@ button:hover {
 }
 
 .box {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .box1 { 
-  grid-column-start: 1;
-  grid-column-end: 3; 
-  grid-row: 1; 
   background-color: #05A8AA;
+  grid-column-end: 3; 
+  grid-column-start: 1;
+  grid-row: 1; 
 }
 
 .box2 {
+  background-color: #DC602E; 
   grid-column: 3 / 4;
   grid-row: 1; 
-  background-color: #DC602E; 
 }
 
 .box2:hover {
@@ -89,17 +101,17 @@ button:hover {
 }
 
 .box3 {
-  grid-column: 4 / 5;
-  grid-row: 1 / 4;
-  background-image: url("http://baconmockup.com/701/750/");
+  background-image: url("https://www.fillmurray.com/g/650/750");
   background-repeat: no-repeat;
   background-size: cover;
+  grid-column: 4 / 5;
+  grid-row: 1 / 4;
 }
 
 .box4 {
+  background-color: #B8D5B8;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background-color: #B8D5B8;
 }
 
 .box4:hover {
@@ -109,24 +121,24 @@ button:hover {
 }
 
 .box5 {
+  background-color: #D7B49E;
+  background-position: center;
+  color: black;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background-color: #D7B49E;
-  color: black;
-  background-position: center;
 }
 
 .box5:hover {
   background-image: url("https://media.giphy.com/media/HKx5p4APGBxi8/giphy.gif");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box6 {
+  background-color: #05A8AA;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  background-color: #05A8AA;
 }
 
 .box6:hover {
@@ -137,9 +149,9 @@ button:hover {
 }
 
 .box7 {
+  background-color: #BC412B;
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  background-color: #BC412B;
 }
 
 .box7:hover {
@@ -150,11 +162,11 @@ button:hover {
 }
 
 .box8 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
   background-color: #B8D5B8;
+  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-row-start: 3;
 }
 
 .box8:hover {
@@ -165,11 +177,11 @@ button:hover {
 }
 
 .box9 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
   background-color: #BC412B;
+  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-row-start: 3;
 }
 
 .box9:hover {
@@ -180,18 +192,19 @@ button:hover {
 
 
 /*Logos and icons*/
+
 .icon {
   height: 60px;
-  width: 60px;
-  margin-top: 90px;
   margin-left: 40px;
-  padding-left: 55px;
+  margin-top: 80px;
+  padding-left: 40px;
+  width: 60px;
 }
 
 .logo {
   height: 12px;
-  width: 12px;
   margin: 0 auto;
+  width: 12px;
 }
 
 /*Media Queries*/
@@ -199,25 +212,23 @@ button:hover {
 @media screen and (min-width: 1375px) {
 
   .icon {
-    margin-top: 100px;
-    margin-left: 60px;
-    padding-left: 55px;
+    margin-left: 25%;
+    margin-top: 80px;
+    padding-left: 45px;
   }
 
   #grid{
     grid-template-rows:
-    300px
-    300px
-    300px;
+    250px
+    250px
+    250px;
   }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1100px) {
 
  .icon {
-  margin-top: 80px;
-  margin-left: 40px;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 }
 
@@ -236,8 +247,8 @@ button:hover {
   }
 
   .icon {
-    margin-top: 60px;
     margin-left: 33%;
+    margin-top: 60px;
     padding-left: 50px;
   }
 
